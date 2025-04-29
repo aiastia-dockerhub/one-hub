@@ -95,7 +95,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            docker.io/aiastia/${{ vars.DOCKER_HUB_REPO }}
+            docker.io/aiastia/one-hub
           # generate Docker tags based on the following events/attributes
           tags: |
             type=raw,value=dev,enable=${{ github.ref == 'refs/heads/main' }}
