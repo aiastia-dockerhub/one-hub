@@ -10,6 +10,8 @@ on:
       - "README.md"
       - "README.en.md"
       - "docs/**"
+  schedule:
+    - cron: 30 20 * * *
 
 jobs:
   build-and-push:
